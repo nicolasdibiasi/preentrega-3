@@ -1,0 +1,117 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+
+
+.div-etioss{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 15px;
+
+
+       grid-template-areas: 
+    "titulo-etios titulo-etios"
+    "imagen-etios parrafo-etios";
+
+
+    justify-content: center;
+    justify-items: center;
+
+        
+}
+
+.imagen-etios{
+    grid-area: imagen-etios;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.parrafo-etios{
+    grid-area: parrafo-etios;
+    margin-top: 75px;
+    text-align: center;
+
+
+}
+
+.titulo-etios{
+    grid-area: titulo-etios;
+    text-align: center;
+    margin-top: 45px;
+    display: block;
+
+
+}
+
+.fondo{
+    background-color: gray;
+    text-align: center;
+
+
+}
+
+.pie{
+    background-color: gray;
+    text-align: center;
+}
+
+footer{
+    
+ 
+    height:0px;
+    
+}
+
+
+
+
+@media screen and (max-width:600px){
+    .div-etios{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+
+        grid-template-areas: 
+            "titulo-etios"
+            "imagen-etios"
+            "parrafo-etio";
+
+        justify-content: center;
+        justify-items: center;
+
+    }
+    .titulo-etios{
+        grid-area: titulo-etios;
+        text-align: center;
+        margin-top: 45px;
+        display: block;
+    
+    
+    }
+    .imagen-etios{
+        grid-area: imagen-etios;
+        margin-top: 15px;
+        text-align: center;
+        
+    
+    }
+    
+    .parrafo-etios{
+        grid-area: parrafo-etios;
+        margin-top: 75px;
+        text-align: center;    
+    
+    }
+    
+    
+}
+
+
+
+

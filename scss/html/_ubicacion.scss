@@ -1,0 +1,180 @@
+
+
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+
+
+
+/* PARTE DE UBICACION */
+
+
+
+
+.div-ubicacion{
+        
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto;
+    text-align: center;
+
+    grid-template-areas: 
+        "foto-ubicacion1 parrafo-ubicacion1"
+        "foto-ubicacion2 parrafo-ubicacion2"
+        "foto-ubicacion3 parrafo-ubicacion3"
+        "foto-ubicacion4 parrafo-ubicacion4"
+        "foto-ubicacion5 parrafo-ubicacion5";
+
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+.foto-ubicacion1{
+    width: 150px;
+    height: 150px;
+}
+
+.foto-ubicacion2{
+    width: 150px;
+    height: 150px;
+
+
+}
+
+.foto-ubicacion3{
+    width: 150px;
+    height: 150px;
+
+}
+
+.foto-ubicacion4{
+    width: 150px;
+    height: 150px;
+
+}
+
+.foto-ubicacion5{
+    width: 150px;
+    height: 150px;
+
+}
+
+
+.parrafo-ubicacion1{
+    grid-area: parrafo-ubicacion1;
+    text-align: center;
+    
+
+}
+.parrafo-ubicacion2{
+    text-align: center;
+}
+
+.parrafo-ubicacion3{
+    grid-area: parrafo-ubicacion3;
+    text-align: center;
+}
+
+.parrafo-ubicacion4{
+    grid-area: parrafo-ubicacion4;
+    text-align: center;
+}
+
+.parrafo-ubicacion5{
+    grid-area: parrafo-ubicacion5;
+    text-align: center;
+}
+
+.pie-ubicacionn{
+    display: grid;
+    text-align: center;
+}
+
+
+.fondo{
+    background-color: gray;
+    text-align: center;
+}
+
+.pie{
+     background-color: gray;
+    text-align: center;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){
+    .div-ubicacion{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+
+        grid-template-areas: 
+            "foto-ubicacion1"
+            "parrafo-ubicacion1"
+            "foto-ubicacion2 "
+            "parrafo-ubicacion2"
+            "foto-ubicacion3 "
+            "parrafo-ubicacion3"
+            "foto-ubicacion4 "
+            "parrafo-ubicacion4"
+            "foto-ubicacion5 "
+            "parrafo-ubicacion5";
+
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+
+    .foto-ubicacion1{
+        grid-area: foto-ubicacion1;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .foto-ubicacion2{
+        grid-area: foto-ubicacion2;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .foto-ubicacion3{
+        grid-area: foto-ubicacion3;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+
+
+    }
+
+    .foto-ubicacion4{
+        grid-area: foto-ubicacion4;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .foto-ubicacion5{
+        grid-area: foto-ubicacion5;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    }
+
+
