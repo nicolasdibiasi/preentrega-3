@@ -1,30 +1,40 @@
 .catalogoo {
-  width: 100%;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; }
-
-.imagen {
-  padding: 10px;
-  margin: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-
-.catalogoo {
-  grid-template-areas: "imagen-1 imagen-2" "imagen-3 imagen-4" "imagen-5 imagen-6";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   justify-content: center;
-  justify-items: center; }
+  align-items: center;
+  grid-template-areas: "imagen-1 imagen-2" "parrafo-hilux parrafo-corolla" "imagen-3 imagen-4" "parrafo-etios parrafo-etiosc" "imagen-5 imagen-6" "parrafo-yaris parrafo-yarisgr"; }
 
 .imagen-1 {
   grid-area: imagen-1;
-  width: 500px;
-  height: 400px; }
+  width: 50%;
+  height: 80%; }
+
+.imagen-2 {
+  grid-area: imagen-2;
+  width: 50%;
+  height: 80%; }
+
+.imagen-3 {
+  grid-area: imagen-3;
+  width: 50%;
+  height: 80%; }
+
+.imagen-4 {
+  grid-area: imagen-4;
+  width: 50%;
+  height: 80%; }
 
 .imagen-5 {
   grid-area: imagen-5;
-  width: 500px;
-  height: 400px; }
+  width: 50%;
+  height: 80%; }
+
+.imagen-6 {
+  grid-area: imagen-6;
+  width: 50%;
+  height: 80%; }
 
 footer {
   height: 0px; }
@@ -37,39 +47,31 @@ footer {
   background-color: gray;
   text-align: center; }
 
-@media screen and (max-width: 600px) {
-  .catalogoo {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "imagen-1" "imagen-2" "imagen-3" "imagen-4" "imagen-5" "imagen-6";
-    justify-content: center;
-    justify-items: center; }
-  .imagen-1 {
-    grid-area: imagen-1; }
-  .imagen-2 {
-    grid-area: imagen-2; }
-  .imagen-3 {
-    grid-area: imagen-3; }
-  .imagen-4 {
-    grid-area: imagen-4; }
-  .imagen-5 {
-    grid-area: imagen-5; }
-  .imagen-6 {
-    grid-area: imagen-6; }
+.parrafo-hilux {
+  grid-area: parrafo-hilux; }
+
+.parrafo-corolla {
+  grid-area: parrafo-corolla; }
+
+.parrafo-etios {
+  grid-area: parrafo-etios; }
+
+.parrafo-etiosc {
+  grid-area: parrafo-etiosc; }
+
+.parrafo-yaris {
+  grid-area: parrafo-yaris; }
+
+.parrafo-yarisgr {
+  grid-area: parrafo-yarisgr; }
+
+@media screen and (max-width: 1024px) {
   .fondo {
     display: none; }
   .pie {
     display: none; }
   .pie-ubicacionn {
     text-align: center; } }
-
-.catalogoo {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; }
 
 .div-etioss {
   display: grid;
@@ -130,12 +132,6 @@ footer {
     grid-area: parrafo-etios;
     margin-top: 75px;
     text-align: center; } }
-
-.catalogoo {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; }
 
 .imagen-toyo {
   grid-area: imagen-toyo; }
@@ -245,12 +241,6 @@ footer {
   .comentarios-clientesmedia {
     grid-area: comentarios-clientesmedia; } }
 
-.catalogoo {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; }
-
 .nosotross {
   width: 100%;
   display: grid;
@@ -313,13 +303,8 @@ footer {
   .texto-nosotross {
     grid-area: texto-nosotross;
     text-align: center;
-    margin-top: 100px; } }
-
-.catalogoo {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; }
+    margin-top: 100px;
+    font-size: 1rem; } }
 
 /* PARTE DE UBICACION */
 .div-ubicacion {

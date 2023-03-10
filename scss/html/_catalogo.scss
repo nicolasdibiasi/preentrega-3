@@ -4,45 +4,69 @@
 
 
 
-.imagen{
-    padding: 10px;
-     margin: 10px;
-     width: 100%;
-     display: flex;
-     justify-content: center;
-   }
-   
 
    
 
 
    .catalogoo{
-    @extend formatogrid;
+    @include grid;
         
 
     grid-template-areas: 
         "imagen-1 imagen-2"
+        "parrafo-hilux parrafo-corolla"
         "imagen-3 imagen-4"
-        "imagen-5 imagen-6";
+        "parrafo-etios parrafo-etiosc"
+        "imagen-5 imagen-6"
+        "parrafo-yaris parrafo-yarisgr";
 
 
 
-    justify-content: center;
-    justify-items: center;
+   
 }
 .imagen-1{
     grid-area: imagen-1;
-    width: 500px;
-    height: 400px;
+    width: 50%;
+    height: 80%;
+
+    
+}
+
+.imagen-2{
+    grid-area: imagen-2;
+    width: 50%;
+    height: 80%;
+}
+
+.imagen-3{
+    grid-area: imagen-3;
+    width: 50%;
+    height: 80%;
+
+    
+}
+
+.imagen-4{
+    grid-area: imagen-4;
+    width: 50%;
+    height: 80%;
 
     
 }
 
 .imagen-5{
     grid-area: imagen-5;
-    width: 500px;
-    height: 400px;
+    width: 50%;
+    height: 80%;
 
+}
+
+.imagen-6{
+    grid-area: imagen-6;
+    width: 50%;
+    height: 80%;
+
+    
 }
 footer{
        
@@ -62,71 +86,50 @@ footer{
     text-align: center;
 }
 
+.parrafo-hilux{
+    grid-area: parrafo-hilux;
+}
+
+.parrafo-corolla{
+    grid-area: parrafo-corolla;
+}
+
+.parrafo-etios{
+    grid-area: parrafo-etios;
+}
+
+.parrafo-etiosc{
+    grid-area: parrafo-etiosc;
+}
+
+.parrafo-yaris{
+    grid-area: parrafo-yaris;
+}
+
+.parrafo-yarisgr{
+    grid-area: parrafo-yarisgr;
+}
 
 
-@media screen and (max-width:600px){
-    .catalogoo{
-        
-        width: 100%;
-        display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: auto;
 
-        grid-template-areas: 
-            "imagen-1"
-            "imagen-2"
-            "imagen-3"
-            "imagen-4"
-            "imagen-5"
-            "imagen-6";
-
-        justify-content: center;
-        justify-items: center;
-    }
-    .imagen-1{
-        grid-area: imagen-1;
-        
-    }
-    .imagen-2{
-        grid-area: imagen-2;
-    }
-    .imagen-3{
-        grid-area: imagen-3;
-    }
-    .imagen-4{
-        grid-area: imagen-4;
-    }
-    .imagen-5{
-        grid-area: imagen-5;
-    }
-    .imagen-6{
-        grid-area: imagen-6;
-    }
-    
+@media screen and (max-width:1024px){
+     
     .fondo{
-        display: none;
+        @extend %none;
     }
     .pie{
         display: none;
     }
 
-    .pie-ubicacionn{
-        text-align: center;
-
-    }
-}
-@media screen and (max-width:1024px){
-    .catalogoo{
-        @extend .formatogrid;
-        grid-template-areas: 
-            "imagen-1 imagen-2"
-            "imagen-3 imagen-4"
-            "imagen-5 imagen-6";
-        justify-content: center;
-        justify-items: center;
-    }
-
     
+    
+}
+@media screen and (max-width:600px){
+   
+     .pie{
+        display: none;
+    }
+
       
 
     

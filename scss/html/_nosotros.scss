@@ -84,45 +84,12 @@
 
 
 @media screen and (max-width:600px){
-    .nosotross{
-        
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto ;
-        grid-template-rows: auto;
-
-
-        grid-template-areas: 
-        "imagen-nosotros"
-        "titulo-nosotross"
-        "texto-nosotross";
-
-
-        justify-content: center;
-        justify-items: center;
+    .img-toyota{
+        display: none;
 
     }
-
-
-    .imagen-nosotros{
-        grid-area: imagen-nosotros;
-    }
-
-
-    .titulo-nosotross{
-        grid-area: titulo-nosotross;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-
     .texto-nosotross{
-        grid-area: texto-nosotross;
-        text-align: center;
-        margin-top: 100px;
-
-
+        font-size: small;
     }
-
 }
 
